@@ -2,9 +2,9 @@
 #include <math.h>
 #include "intersection.h"
 
-void intersection(float *X, float *Y, float *R, int n)
+int intersection(float *X, float *Y, float *R, int n)
 {
-	int i,j;
+	int i,j,test;
 	float x,y,d;
 	for (i = 0; i < n ; i++) 
 	{
@@ -14,7 +14,11 @@ void intersection(float *X, float *Y, float *R, int n)
             y = Y[i] - Y[j];
             d = sqrt(pow(x, 2) + pow(y, 2));
             if (d <= (R[i] + R[j]))
-                printf("Окржности №%d и №%d пересекаются\n", i, j);
+            {    
+                test = 1;
+                printf("Окружности №%d и №%d пересекаются\n", i, j);
+            }
         }
     }
+    return test;
 }
