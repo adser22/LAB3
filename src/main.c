@@ -1,6 +1,7 @@
 #include <stdio.h>
 #define _USE_MATH_DEFINES
 #include <math.h>
+#include "area.h"
 
 int main()
 {
@@ -20,11 +21,11 @@ int main()
         printf("\n");
     }
     float r;
-    for (i = 0; i < n; i++) {
-        
+    for (i = 0; i < n; i++) 
+    {
         printf("%d. circle(%f %f, %f)\n ", i, X[i], Y[i], R[i]);
         r = R[i];
-
+        area(r);
     }
     return 0;
 }
