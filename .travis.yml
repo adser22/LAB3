@@ -8,3 +8,5 @@ script:
 
 compiler: gcc
 
+dist: xenial
+
