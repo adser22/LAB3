@@ -6,7 +6,7 @@ void intersection(float *X, float *Y, float *R, int n)
 {
 	int i,j;
 	float x,y,d;
-	for (i = 0; i < n; i++) 
+	for (i = 0; i < n ; i++) 
 	{
         for (j = i + 1; j < n; j++) 
         {

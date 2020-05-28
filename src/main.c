@@ -12,7 +12,7 @@ int main()
     scanf("%d", &n);
     float X[n], Y[n], R[n];
 
-    for (i = 1; i < n + 1; i++) 
+    for (i = 0; i < n; i++) 
     {
         printf("%d.Введите координаты центра окржности и его радиус:\n", i);
         printf("X = ");
@@ -24,7 +24,7 @@ int main()
         printf("\n");
     }
     float r;
-    for (i = 1; i < n + 1; i++) 
+    for (i = 0; i < n; i++) 
     {
         printf("%d. circle(%f %f, %f)\n ", i, X[i], Y[i], R[i]);
         r = R[i];
