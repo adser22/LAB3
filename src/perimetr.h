@@ -4,7 +4,7 @@
 
 
 
-void perimetr(float r);
+float perimetr(float r);
 
 
 

@@ -4,7 +4,7 @@
 
 
 
-void intersection(float *X, float *Y, float *R, int n);
+int intersection(float *X, float *Y, float *R, int n);
 
 
 

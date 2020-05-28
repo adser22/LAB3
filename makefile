@@ -23,6 +23,9 @@ $(OBJ_DIR)/area.o: $(SRC_DIR)/area.c
 $(OBJ_DIR)/perimetr.o: $(SRC_DIR)/perimetr.c
 	gcc -Wall -Wextra -c  $(SRC_DIR)/perimetr.c -o  $(OBJ_DIR)/perimetr.o $(FLAGS)
 
+$(BIN_DIR)/testing: $(OBJ_TEST_DIR)/main.o $(OBJ_TEST_DIR)/area_test.o $(OBJ_TEST_DIR)/perimetr_test.o $(OBJ_TEST_DIR)/intersection_test.o $(OBJ_DIR)/perimetr.o $(OBJ_DIR)/area.o $(OBJ_DIR)/intersection.o
+	gcc   $(OBJ_TEST_DIR)/main.o  $(OBJ_TEST_DIR)/area_test.o  $(OBJ_TEST_DIR)/perimetr_test.o $(OBJ_TEST_DIR)/intersection_test.o $(OBJ_DIR)/perimetr.o $(OBJ_DIR)/area.o $(OBJ_DIR)/intersection.o -o $(BIN_DIR)/testing -lm $(FLAG)
+
 $(OBJ_TEST_DIR)/main.o: $(TEST_DIR)/main.c
 	gcc -I thirdparty -I src -c $(TEST_DIR)/main.c -o  $(OBJ_TEST_DIR)/main.o $(FLAG)
 

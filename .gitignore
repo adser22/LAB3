@@ -1,3 +1,4 @@
+bin/testing
 bin/geometry
 *.out
 *.o
