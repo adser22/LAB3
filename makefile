@@ -1,5 +1,6 @@
 .PHONY: clean all run_geometry 
 FLAGS := -std=c99
+FLAG := -std=c11
 SRC_DIR := ./src
 BIN_DIR := ./bin
 OBJ_DIR := ./build
