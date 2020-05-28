@@ -3,6 +3,7 @@
 #include <math.h>
 #include "area.h"
 #include "perimetr.h"
+#include "intersection.h"
 
 int main()
 {
@@ -11,7 +12,8 @@ int main()
     scanf("%d", &n);
     float X[n], Y[n], R[n];
 
-    for (i = 1; i < n + 1; i++) {
+    for (i = 1; i < n + 1; i++) 
+    {
         printf("%d.Введите координаты центра окржности и его радиус:\n", i);
         printf("X = ");
         scanf("%f", &X[i]);
@@ -28,7 +30,7 @@ int main()
         r = R[i];
         perimetr(r);
         area(r);
-
     }
+    intersection(X,Y,R,n);
     return 0;
 }
